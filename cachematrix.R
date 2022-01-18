@@ -1,10 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
-
-
 ## This my second programming assigment.
 ## first it requires coding a R function 
 ## is able to cache potentially time-consuming computations
@@ -26,7 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 ## This function describes the way for computing or returning 
 ## the inverse matrix that is requires.
 
@@ -37,11 +29,11 @@ cacheSolve <- function(x, ...) {
                 message("getting cached data")
                 return(m)
         }
-        mat <- x$get()
-        inv <- Inverse(mat, ...)
+        matx <- x$get()
+        inv <- Inverse(matx, ...)
         x$setInverse(inv)
         inv
 }
 
-# finally try to test ypur function if it run wel according what are 
+# finally try to test your function if it run well according what are 
 ## your expecting
