@@ -17,16 +17,18 @@ makeCacheMatrix <- function(x = matrix()) {
                 x <<- y
                 inv <<- NULL
         }
-        get <- function() x
-        setInverse <- function(inverse) inv <<- inverse
-        getInverse <- function() inv
-        list(set = set, get = get,
+     get <- function() x
+     setInverse <- function(inverse) inv <<- inverse
+     getInverse <- function() inv
+     list(set = set, get = get,
              setInverse = setInverse,
              getInverse = getInverse) ##get the value of the inverse
 }
 
 
 ## Write a short comment describing this function
+## This function describes the way for computing or returning 
+## the inverse matrix that is requires.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -41,4 +43,5 @@ cacheSolve <- function(x, ...) {
         inv
 }
 
-
+# finally try to test ypur function if it run wel according what are 
+## your expecting
